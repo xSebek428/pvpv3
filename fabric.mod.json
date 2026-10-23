@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpclient",
+  "version": "${version}",
+  "name": "PvP Client",
+  "description": "Armor HUD, Potion HUD, własny celownik i No Hurt Cam.",
+  "authors": ["Ty"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["pl.pvpmod.PvpMod"],
+    "client": ["pl.pvpmod.PvpModClient"]
+  },
+  "mixins": ["pvpclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
